@@ -1,0 +1,39 @@
+filetype plugin indent on
+filetype plugin on
+set nocompatible
+set tabstop=4
+set shiftwidth=4
+set expandtab
+"set smartindent
+set number
+set hidden
+set nohlsearch
+set noerrorbells
+set nowrap
+set noswapfile
+set nobackup
+set incsearch
+set scrolloff=8
+set signcolumn=yes
+"set colorcolumn=100
+
+"netrw default plugin for exploring files
+let g:netrw_banner=0
+let g:netrw_browse_split=2
+let g:netrw_winsize=25
+let g:netrw_liststyle=3
+
+set omnifunc=csscomplete#CompleteCSS
+set omnifunc=syntaxcomplete#Complete
+
+inoremap <C-j> <C-x><C-o>
+
+"colorscheme
+packadd! gruvbox
+syntax enable
+set bg=dark
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
+
+"this causes vim to use system clipboard for y and p commands
+:set clipboard=unnamedplus
